@@ -9,6 +9,7 @@
 # 6) Upon quiting the program, print out all items in the user's list
 
 # Note: Ask the user four bits of input: Do you want to : Show/Add/Delete or Quit?
+from Ipython.display import clear_output
 
 shopping_list = []
 
