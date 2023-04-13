@@ -15,7 +15,7 @@ shopping_list = []
 def add_items():
   item = input("What would you like to buy? ")
   shopping_list.append(item)
-  print(f"{item} has been added to your shopping list.")
+    print(f"{item} has been added to your shopping list.")
 
 def delete_items():
   item = input("What would you like to remove? ")
