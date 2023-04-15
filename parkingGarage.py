@@ -31,7 +31,15 @@ class ParkingGarage:
                 print("sorry you need to buy a ticket to proceed.")
 
             def pay_for_parking(self):
-                pass
+                valid_ticket = int(input("What is your ticket number?: "))
+                if valid_ticket in self.current_tickets:
+                    payment = input("Enter your payment amount: ")
+                    self.current_tickets[purchase_ticket]["paid"] = True
+                    print("Payment has been accepted! You have 20 minutes to leave the garage.")
+                elif current_tickets:
+                    print("Your ticket has been paid already.")
+                else:
+                    print("Sorry! the ticket number is invalid.")
 
             def leave_garage(self):
                 valid_ticket = int(input("what is your ticket number?: "))
