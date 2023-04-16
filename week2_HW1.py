@@ -17,8 +17,8 @@ def prime_num(n):
  # Take in a users input for their age, if they are younger than 18 print kids, if they're 18 to 65 print adults, else print seniors
  age = int(input("Enter your age: "))
     if age < 18:
-        print(kids)
-    elif 18 <= 65:
-        print(adults)
+        print('kids')
+    elif <= 65:
+        print('adults')
     else:
-        print(seniors)
+        print('seniors')
