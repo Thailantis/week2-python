@@ -10,8 +10,6 @@ while True:
     
 # Get first prime numbers to 100
 def prime_num(n):
-    if n < 2:
-        return False
     for n in range(1, 101, 2):
         if prime_num(n):
             print(prime_num)
