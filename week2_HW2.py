@@ -9,7 +9,8 @@ def less_than_ten(input_list):
     if num < 10:
       output_list.append(num)
   return output_list
-less_than_ten(input_list)
+
+print(less_than_ten(input_list))
 
 
 
@@ -21,6 +22,7 @@ l_2=[3,4,5,6,7,8,10]
 
 def merge_and_sort_lists(l_1, l_2):
   merged_list = l_1 + l_2
-  sorted_list = .sort(merged_list)
+  sorted_list = sorted(merged_list)
   return sorted_list
-print(merge_and_sort_lists)
+
+print(merge_and_sort_lists(l_1,l_2))
