@@ -10,9 +10,11 @@ while True:
     
 # Get first prime numbers to 100
 def prime_num(n):
+    if n < 2:
+        return False
     for n in range(1, 101, 2):
         if prime_num(n):
-            print(n)
+            print(prime_num)
           
  # Take in a users input for their age, if they are younger than 18 print kids, if they're 18 to 65 print adults, else print seniors
  age = int(input("Enter your age: "))
