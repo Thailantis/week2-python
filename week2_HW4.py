@@ -7,14 +7,14 @@
   def __init__ (self):
         self.items = {}
         
-    def add_items(self, item, quantity):
+    def add_item(self, item, quantity):
         if item in self.items:
             self.items[item] +=quantity
         else:
             self.items[item] = quantity
     print(f" {quantity} {item} has been added to your shopping list.")
     
-    def delete_items(self, item, quantity):
+    def delete_item(self, item, quantity):
         if item in self.items:
             if quantity < self.items[item]:
                 self.items[item] -= quantity
@@ -27,15 +27,13 @@
         else:
             print(f"You don't have {item} in your cart")
             
-    def show_list(self):
+    def show_items(self):
         if not self.items:
             print("Your cart is empty")
         else:
             print("Your cart: ")
             for item, quantity in self.items.items():
                 print(f"{item}: {quantity}")
-if __name__ == '__main__':                
-    cart = Cart()
     
     while True:
         print("Enter 'add' to add an item to your cart")
