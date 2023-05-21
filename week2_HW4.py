@@ -3,8 +3,9 @@
 # However, if you feel a different way is best for you and your own thought process, please do what feels best for you by all means.
 # Create a class called cart that retains items and has methods to add, remove, and show
 
-  class Cart(): 
-  def __init__ (self):
+  class Cart():
+    
+    def __init__ (self):
         self.items = {}
         
     def add_item(self, item, quantity):
@@ -34,24 +35,25 @@
             print("Your cart: ")
             for item, quantity in self.items.items():
                 print(f"{item}: {quantity}")
-    
-    while True:
-        print("Enter 'add' to add an item to your cart")
-        print("Enter 'remove' to remove an item to your cart")
-        print("Enter 'show' to show your current items in the cart")
-        print("Enter 'quit' to exit the Superstore USA program")
+cart = Cart()
+
+while True:
+    print("Enter 'add' to add an item to your cart")
+    print("Enter 'remove' to remove an item to your cart")
+    print("Enter 'show' to show your current items in the cart")
+    print("Enter 'quit' to exit the Superstore USA program")
         
-    choice = input("What would you like to do?")
+    choice = input("What would you like to do? ")
     
     if choice == "add":
         item = input("What would you like to buy? ")
         quantity = int(input("How many would you like? "))
         cart.add_item(item, quantity)
         
-    elif choice == "delete":
+    elif choice == "remove":
         item = input("What would you like to remove? ")
         quantity = int(input("How many would you like to remove? "))
-        cart.remove_item(item, quantity)
+        cart.delete_item(item, quantity)
         
     elif choice == "show":
         cart.show_items()
